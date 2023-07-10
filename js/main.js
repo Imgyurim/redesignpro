@@ -36,16 +36,26 @@ window.onload = function(){
     });
     let station4 = new Swiper(".sns .station4",{
       loop:true,
-      // direction:"horizontal",
+      spaceBetween:10,
+      
+      // // direction:"horizontal",
         slidesPerView: 4,
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     type: "progressbar",
+      //   },
+        autoplay:true,
+      //   speed:5
         pagination: {
           el: ".swiper-pagination",
           type: "progressbar",
         },
-        autoplay:true,
-        speed:5
-    
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
      });
+
      let station5 = new Swiper(".subpage11 .station5",{
       loop:true,
       direction:"horizontal",
