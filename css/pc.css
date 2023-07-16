@@ -1,54 +1,8 @@
-/* reset */
-*{margin:0;padding:0;}
-a{text-decoration: none; color: inherit;}
-ul,ol{list-style: none;}
-h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight:400;}
-address,em,i{font-style: normal;}
-strong,b{font-weight: 400;}
-img{
-    max-width:100%;
-    /* 선택한 태그의 너비의 최대값을 지정 */
-}
-
-#cursor {
-    position: absolute;
-    z-index: 10000000000000;
-    transform: translate(10%, 10%);
-    background-image: url(../img/까이딴자이.png);
-    background-size: contain;
-    width: 80px;
-    height: 80px;
-    pointer-events: none;
-  }
-  
-@font-face {
-    font-family: "vitro";
-    src: url(../font/VITRO\ INSPIRE\ TTF.ttf) format("truetype");
-    font-weight: lighter;
-}
-@font-face {
-    font-family: "vitro";
-    src: url(../font/VITRO\ PRIDE\ TTF.ttf) format("truetype");
-    font-weight: normal;
-}
-@font-face {
-    font-family: "vitro";
-    src: url(../font/VITRO\ CORE\ TTF.ttf) format("truetype");
-    font-weight: bold;
-}
-@font-face {
-    font-family: 'NanumSquareNeo-Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-html{
-    font-size: 16px;
-    font-family:'vitro',serif;
-}
-
+@media (min-width:769px){
+.mo{display: none;}
+.moMenu{display: none;}
 /* header */
-header{
+header.pc{
     position: fixed;
     left: 0;top:0;
     width: 100%;
@@ -59,7 +13,7 @@ header{
     transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
     z-index: 1000;
 }
-header:hover{
+header.pc:hover{
     background: #005841;
     color:#fff;
     height: 350px;
@@ -121,7 +75,7 @@ nav{
 }
 /* main */
 .wrap{
-    margin-top:95px;
+    margin-top: 79px;
 }
 .main_p .station1 {
     width: 100%;
@@ -683,17 +637,17 @@ nav{
     color: #fff;
     border-radius: 50% 50% 0 0;
 }
-.main_p .snsTitle{
+.main_p .pcsnsTitle{
     display: flex;
     padding-top: 180px;
 }
 
-.main_p .snsTitle>h2{
+.main_p .pcsnsTitle>h2{
     color:#fff;
     font-size: 4rem;
     font-weight: bold;
 }
-.main_p .snsTitle>p{
+.main_p .pcsnsTitle>p{
     padding-left: 19px;
     color: #fff;
     font-size: 1.5rem;
@@ -1446,3 +1400,5 @@ footer{
     right: 7px;
     FONT-FAMILY: 'NanumSquareNeo-Variable';
 } */
+
+}
