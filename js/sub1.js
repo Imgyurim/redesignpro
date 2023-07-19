@@ -10,33 +10,44 @@ $(document).ready(function(){
     })
     $(".wrap>div").click(function(){})
 
-    $(".wrap>div").on("wheel DOMMouseScroll",function(event){
-    //    console.log(event)
+
+
+        $(".wrap>div").on("wheel DOMMouseScroll",function(event){
+            //    console.log(event)
         let E = event.originalEvent
         let delta = 0;
         if(E.detail){
         delta = E.detail * -40
         }else{
         delta = E.wheelDelta
-        }
+    }
 
-        if(delta<0){
-            //마우스 휠을 내렸을 때
-           //  console.log($(this).next().length)
+    if(delta<0){
+        //마우스 휠을 내렸을 때
+        //  console.log($(this).next().length)
+        let windowWidth = $(window).width()
+        if(windowWidth>=768){
             if($(this).next().length!=0){
                 let posTop = $(this).next().offset().top
             $("html,body").stop().animate({scrollTop:posTop-95},1000)
             }
-           }else{
-            //마우스 휠을 올렸을 때
-             //  console.log($(this).prev().length)
+        }
+
+        }else{
+        //마우스 휠을 올렸을 때
+        //  console.log($(this).prev().length)
+        let windowWidth = $(window).width()
+        if(windowWidth>=768){
             if($(this).prev().length!=0){
-           let posTop = $(this).prev().offset().top
-           $("html,body").stop().animate({scrollTop:posTop-95},1000)
+                let posTop = $(this).prev().offset().top
+                $("html,body").stop().animate({scrollTop:posTop-95},1000)
             }
-           }
-           return 
+        }    
+    }
+    return
+
     })
+    
 
     $(".main_p .tab>li").click(function(){
         let idx = $(this).index()

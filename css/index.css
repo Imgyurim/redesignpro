@@ -6,8 +6,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight:400;}
 address,em,i{font-style: normal;}
 strong,b{font-weight: 400;}
 img{
-    max-width:100%;
-    /* 선택한 태그의 너비의 최대값을 지정 */
+    width:100%;
 }
 
 #cursor {
@@ -21,7 +20,7 @@ img{
     pointer-events: none;
   }
   
-@font-face {
+/* @font-face {
     font-family: "vitro";
     src: url(../font/VITRO\ INSPIRE\ TTF.ttf) format("truetype");
     font-weight: lighter;
@@ -41,8 +40,9 @@ img{
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-}
+} */
 html{
     font-size: 16px;
-    font-family:'vitro',serif;
+    /* font-family:'vitro',serif; */
+    font-family: 'Noto Sans KR', sans-serif;
 }

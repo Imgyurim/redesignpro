@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홍콩다방 서브페이지3</title>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="./js/sub1.js"></script>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>홍콩다방 메인페이지</title>
+
     <link rel="stylesheet" href="./css/pc.css">
     <link rel="stylesheet" href="./css/mo.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="./css/index.css">
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="./js/main.js"></script>
-<script src="./js/mainSlide.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/mainSlide.js"></script>
+    <script src="./js/sub1.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
      <!-- 마우스커서 -->
@@ -25,17 +30,15 @@
      <script src="./js/mouse.js"></script>
      <!-- 마우스커서 -->
     <header>
-        <div class="innerHeader">
-            <div class="headerLogo">
-                    <h1>
-                        <a href="./main.html">
-                            <img src="./img/headerLogo.png" alt="홍콩다방 로고">
-                        </a>
-                    </h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">홍콩다방</a></li>
+        <nav class="moMenu">
+            <div class="moGnb">
+                <h1 class="logoMo"><a href="#"><img src="./img/headerLogo.png" alt="펄어비스 검정로고"></a></h1>
+                <ul class="mobileMenuList">
+                    <li><a href="#">홍콩다방</a>
+                        <ul>
+                            <li><a href="#">브랜드 소개</a></li>
+                        </ul>
+                    </li>
                     <li><a href="./sub1.html">메뉴</a>
                         <ul>
                             <li><a href="#">시그니쳐</a></li>
@@ -47,6 +50,7 @@
                         </ul>
                     </li>
                     <li><a href="./sub2.html">매장안내</a></li>
+                    <li><a href="#">새소식</a></li>
                     <li class="Establishment"><a href="./sub3.html">창업문의</a>
                         <ul>
                             <li><a href="#">사업장 협업 문의</a></li>
@@ -55,9 +59,58 @@
                         </ul>
                     </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </nav>
+        <div class="main_p">
+            <header class="pc">
+                <div class="innerHeader">
+                    <div class="headerLogo">
+                        <h1>
+                            <a href="./main.html">
+                                <img src="./img/headerLogo.png" alt="홍콩다방 로고">
+                            </a>
+                        </h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">홍콩다방</a>
+                                <ul>
+                                    <li><a href="#">브랜드 소개</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./sub1.html">메뉴</a>
+                                <ul>
+                                    <li><a href="#">시그니쳐</a></li>
+                                    <li><a href="#">베이커리</a></li>
+                                    <li><a href="#">콜드 드링크</a></li>
+                                    <li><a href="#">커피</a></li>
+                                    <li><a href="#">두배우유</a></li>
+                                    <li><a href="#">콜라보메뉴</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./sub2.html">매장안내</a></li>
+                            <li><a href="#">새소식</a></li>
+                            <li class="Establishment"><a href="./sub3.html">창업문의</a>
+                                <ul>
+                                    <li><a href="#">사업장 협업 문의</a></li>
+                                    <li><a href="#">가맹 절차 및 비용</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <header class="mo">
+                <div class="innerHeader">
+                    <div class="btnMoMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <h1 class="moLogo"><a href="#"> <img src="./img/headerLogo.png" alt="홍콩다방 로고"></a></h1>
+                </div>
+            </header>
     <main>
         <div class="subpage3">
             <div>

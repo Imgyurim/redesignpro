@@ -1,7 +1,7 @@
 window.onload = function(){
   
   
-    let station1 = new Swiper(".main_p .station1",{
+    let station1 = new Swiper(".station1",{
      loop:true,
      direction:"horizontal",
      pagination: {
@@ -17,7 +17,7 @@ window.onload = function(){
        speed:10
     });
 
-    let station2 = new Swiper(".main_p .station2",{
+    let station2 = new Swiper(".station2",{
       effect : 'cube',
       cubeEffect : {
         slideShadows : true, // 슬라이더를 돌릴때 흐릿해 지는 그림자 표시 여부
@@ -74,7 +74,20 @@ window.onload = function(){
          prevEl: '.swiper-button-prev',
        },
      });
-   
+
+     let menu = false;
+     $(".btnMoMenu").click(function(){
+         if(menu == false){
+             $(".btnMoMenu").addClass("close")
+             $(".moMenu").addClass("show")
+             menu = true
+         }else{
+             $(".btnMoMenu").removeClass("close")
+             $(".moMenu").removeClass("show")
+             menu = false
+         }
+         }) 
+
 
 
 }
