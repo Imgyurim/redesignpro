@@ -95,17 +95,6 @@ $(document).ready(function(){
 
     });
 
-    // let S2tab = document.querySelectorAll(".subpage3 .tab>li")
-    // let S2con = document.querySelectorAll(".subpage3 .subcontent .items")
-    $(".subpage3 .tab>li").click(function(){
-        let idx = $(this).index()
-       $(".subpage3 .tab>li").removeClass("on")
-       $(this).addClass("on")
-
-       $(".subpage3 .subcontent .items").removeClass("on")
-       $(".subpage3 .subcontent .items").eq(idx).addClass("on")
-   });
-
    let count = 0;
    $(".slide .btnNext").click(function(e){
     e.preventDefault()
@@ -124,14 +113,6 @@ $(document).ready(function(){
         // moveSlider(count)
         
     });
-    $(".subpage3 .tabTip_b>li").click(function(){
-        let idx = $(this).index()
-        $(".subpage3 .tabTip_b>li").removeClass("on")
-        $(this).addClass("on")
-
-        $(".subpage3 .cost_text > li").removeClass("on")
-        $(".subpage3 .cost_text > li").eq(idx).addClass("on")
-    });
 
     $(".subpage11 .tab>li").click(function(){
         let idx = $(this).index()
@@ -147,6 +128,29 @@ $(document).ready(function(){
         $(".subpage11 .list > .list_top").removeClass("on")
         $(".subpage11 .list > .list_top").eq(idx).addClass("on")
     });
+       
+    //    서브페이지3 탭메뉴
+    $(".tab3>li").click(function(){
+        let idx = $(this).index()
+    $(".tab3>li").removeClass("on")
+    $(this).addClass("on")
+
+    $(".sub3content .items").removeClass("on")
+    $(".sub3content .items").eq(idx).addClass("on")
+    });
+
+    // 서브페이지3 초기비용 탭메뉴
+
+    $(".tabTip_b>li").click(function(){
+        let idx = $(this).index()
+        $(".tabTip_b>li").removeClass("on")
+        $(this).addClass("on")
+
+        $(".cost_text > li").removeClass("on")
+        $(".cost_text > li").eq(idx).addClass("on")
+    });
+
+
 
 
 })
