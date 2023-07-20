@@ -5,29 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홍콩다방 메인페이지</title>
-
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/pc.css">
     <link rel="stylesheet" href="./css/mo.css">
     <link rel="stylesheet" href="./css/index.css">
-
+    <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- js -->
     <script src="./js/main.js"></script>
     <script src="./js/mainSlide.js"></script>
     <script src="./js/sub1.js"></script>
-
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <!-- 마우스커서 -->
-    <!-- <div id="cursor" style="top: 901px; left: 290px;"></div>
-    <script src="./js/mouse.js"></script> -->
+    <div id="cursor" style="top: 901px; left: 290px;"></div>
+    <script src="./js/mouse.js"></script>
     <!-- 마우스커서 -->
     <header class="mo">
         <div class="innerHeader">
@@ -40,7 +41,7 @@
         </div>
         <nav class="moMenu">
             <div class="moGnb">
-                <h1 class="logoMo"><a href="#"><img src="./img/headerLogo.png" alt="펄어비스 검정로고"></a></h1>
+                <h1 class="logoMo"><a href="#"><img src="./img/headerLogo.png" alt="홍콩다방 로고"></a></h1>
                 <ul class="mobileMenuList">
                     <li><a href="#">홍콩다방</a>
                         <ul>
@@ -70,7 +71,7 @@
             </div>
         </nav>
     </header>
-    <div class="main_p">
+    <div class="main">
         <header class="pc">
             <div class="innerHeader">
                 <div class="headerLogo">
@@ -110,8 +111,8 @@
                 </nav>
             </div>
         </header>
-        <main class="wrap">
-            <div class="con1 station1 swiper">
+        <main>
+            <div class="station1 swiper">
                 <ul class="train swiper-wrapper">
                     <li class="swiper-slide">
                         <img src="./img/b1.jpg" alt="bannerImg1">
@@ -139,7 +140,7 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-            <div class="con2 station2 swiper">
+            <div class="station2 swiper">
                 <ul class="train swiper-wrapper">
                     <li class="swiper-slide">
                         <img src="./img/c.png" alt="컵">
@@ -163,7 +164,7 @@
                 </ul>
                 <div class="swiper-pagination"></div>
             </div>
-            <div class="con3 content swiper">
+            <div class="category swiper">
                <div class="category_left">
                     <section class="bg_area">
                         <ul class="bg_category">
@@ -202,7 +203,6 @@
                         </div>
                         <div class="topping">
                             <h4>토핑류</h4>
-                            <!-- 까이딴자이-->
                             <ul class="topping_img">
                                 <li class="on ">
                                     <ul>
@@ -509,7 +509,7 @@
             </div>
             <div class="con6 video">
                 <h2>홍콩다방 TV</h2>
-                <!-- <ul>
+                <ul>
                     <li>
                         <iframe width="400" height="250" src="https://www.youtube.com/embed/r5XS3lbRysE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </li>
@@ -519,7 +519,7 @@
                     <li>
                         <iframe width="400" height="250" src="https://www.youtube.com/embed/eCmSqVK5FCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </li>
-                </ul> -->
+                </ul>
                 <ul class="youtube_link">
                     <li><a href="https://www.youtube.com/results?search_query=%ED%99%8D%EC%BD%A9%EB%8B%A4%EB%B0%A9">영상보러가기</a></li>
                     <li><a href="https://www.youtube.com/results?search_query=%ED%99%8D%EC%BD%A9%EB%8B%A4%EB%B0%A9"><p>GO</p></a></li>
@@ -531,15 +531,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="con7 sns">
+            <div class="sns">
                 <div class="snsList">
-                    <section class="pcsnsTitle">
+                    <section class="snsTitle">
                         <h2>SNS<br>
                         FOLLOW US</h2>
-                        <p><a href="https://www.instagram.com/hongkongdabang_korea/?hl=ko">@hongkongdabang_korea</a></p>
-                    </section>
-                    <section class="mosnsTitle">
-                        <h2>SNS FOLLOW US</h2>
                         <p><a href="https://www.instagram.com/hongkongdabang_korea/?hl=ko">@hongkongdabang_korea</a></p>
                     </section>
                     <section class="station4 swiper">

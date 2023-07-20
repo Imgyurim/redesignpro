@@ -1,19 +1,18 @@
 $(document).ready(function(){
+    // 페이지 스크롤
     $(window).scroll(function(){
         let winst = $(window).scrollTop()
-        let con2top = $(".con2").offset().top
-        if(winst>=con2top){
-            $(".con2").addClass("on")
+        let pagetop = $(".station1").offset().top
+        if(winst>=pagetop){
+            $(".station1").addClass("on")
         }else{
-            $(".con2").removeClass("on")
+            $(".station1").removeClass("on")
         }
     })
-    $(".wrap>div").click(function(){})
+    $("main>div").click(function(){})
 
 
-
-        $(".wrap>div").on("wheel DOMMouseScroll",function(event){
-            //    console.log(event)
+        $("main>div").on("wheel DOMMouseScroll",function(event){
         let E = event.originalEvent
         let delta = 0;
         if(E.detail){
@@ -49,29 +48,29 @@ $(document).ready(function(){
     })
     
 
-    $(".main_p .tab>li").click(function(){
+    $("main .tab>li").click(function(){
         let idx = $(this).index()
-        $(".main_p .tab>li").removeClass("on")
+        $("main .tab>li").removeClass("on")
         $(this).addClass("on")
 
-        $(".main_p .bg_category > .bg_items").removeClass("on")
-        $(".main_p .bg_category > .bg_items").eq(idx).addClass("on")
+        $(".bg_category > .bg_items").removeClass("on")
+        $(".bg_category > .bg_items").eq(idx).addClass("on")
 
-        $(".main_p .maincontent > .items").removeClass("on")
-        $(".main_p .maincontent > .items").eq(idx).addClass("on")
+        $(".maincontent > .items").removeClass("on")
+        $(".maincontent > .items").eq(idx).addClass("on")
 
     });
 
-    $(".main_p .menu_img>li").click(function(){
+    $("main .menu_img>li").click(function(){
         let idx = $(this).index()
-        $(".main_p .menu_img>li").removeClass("on")
+        $("main .menu_img>li").removeClass("on")
         $(this).addClass("on")
 
-        $(".main_p .top_img > li").removeClass("on")
-        $(".main_p .top_img > li").eq(idx).addClass("on")
+        $(".top_img > li").removeClass("on")
+        $(".top_img > li").eq(idx).addClass("on")
     });
 
-    $(".main_p .slide> .btnNext").click(function(e){
+    $("main .slide> .btnNext").click(function(e){
         let count = 0;
         e.preventDefault() //클릭했을 때 a태그의 기본기능을 억제(스크롤바가 가장위로 올라가는 현상 방지)
         count++;
@@ -83,15 +82,14 @@ $(document).ready(function(){
 
     // let S1tab = document.querySelectorAll(".subpage1 .tap>li");
     // let S1con = document.querySelectorAll(".subpage1 .content>li");
-    $(".subpage1 .tap>li").click(function(){
+    $(".sub1  .tap>li").click(function(){
          let idx = $(this).index()
-        $(".subpage1 .tap>li").removeClass("on")
+        $(".sub1 .tap>li").removeClass("on")
         $(this).addClass("on")
 
-        $(".subpage1 .content>li").removeClass("on")
-        $(".subpage1 .content>li").eq(idx).addClass("on")
+        $(".sub1 .content>li").removeClass("on")
+        $(".sub1 .content>li").eq(idx).addClass("on")
 
-        // 공부^^
         let liHeight = $(".content>li.on").height()
         $(".content").height(liHeight)
 

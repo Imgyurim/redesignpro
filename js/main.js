@@ -1,6 +1,6 @@
 window.onload = function(){
   
-  
+    // station1
     let station1 = new Swiper(".station1",{
      loop:true,
      direction:"horizontal",
@@ -13,10 +13,11 @@ window.onload = function(){
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      //  autoplay:true,
+       autoplay:true,
        speed:10
     });
 
+    // station2
     let station2 = new Swiper(".station2",{
       effect : 'cube',
       cubeEffect : {
@@ -34,18 +35,13 @@ window.onload = function(){
         },
 
     });
+
+    // sns
     let station4 = new Swiper(".sns .station4",{
       loop:true,
       spaceBetween:10,
-      
-      // // direction:"horizontal",
         slidesPerView: 4,
-      //   pagination: {
-      //     el: ".swiper-pagination",
-      //     type: "progressbar",
-      //   },
         autoplay:true,
-      //   speed:5
         pagination: {
           el: ".swiper-pagination",
           type: "progressbar",
@@ -75,6 +71,7 @@ window.onload = function(){
        },
      });
 
+    // 모바일 메뉴
      let menu = false;
      $(".btnMoMenu").click(function(){
          if(menu == false){

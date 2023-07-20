@@ -4,389 +4,388 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홍콩다방 메인페이지</title>
-
+    <title>홍콩다방 서브페이지</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/pc.css">
     <link rel="stylesheet" href="./css/mo.css">
     <link rel="stylesheet" href="./css/index.css">
-
+    <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- js -->
     <script src="./js/main.js"></script>
     <script src="./js/mainSlide.js"></script>
     <script src="./js/sub1.js"></script>
-
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    
 </head>
 <body>
      <!-- 마우스커서 -->
      <div id="cursor" style="top: 901px; left: 290px;"></div>
      <script src="./js/mouse.js"></script>
      <!-- 마우스커서 -->
-    <div>
-        <header>
-            <div class="innerHeader">
-                <div class="headerLogo">
-                        <h1>
-                            <a href="./main.html">
-                                <img src="./img/headerLogo.png" alt="홍콩다방 로고">
-                            </a>
-                        </h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">홍콩다방</a></li>
-                        <li><a href="./sub1.html">메뉴</a>
-                            <ul>
-                                <li><a href="#">시그니쳐</a></li>
-                                <li><a href="#">베이커리</a></li>
-                                <li><a href="#">콜드 드링크</a></li>
-                                <li><a href="#">커피</a></li>
-                                <li><a href="#">두배우유</a></li>
-                                <li><a href="#">콜라보메뉴</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./sub2.html">매장안내</a></li>
-                        <li class="Establishment"><a href="./sub3.html">창업문의</a>
-                            <ul>
-                                <li><a href="#">사업장 협업 문의</a></li>
-                                <li><a href="#">가맹 절차 및 비용</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
+    <header>
+        <div class="innerHeader">
+            <div class="headerLogo">
+                    <h1>
+                        <a href="./main.html">
+                            <img src="./img/headerLogo.png" alt="홍콩다방 로고">
+                        </a>
+                    </h1>
             </div>
-        </header>
-        <main>
-            <div class="subpage11">
-                <div class="subtab tabMenu">
-                    <h1>MENU</h1>
-                    <ul class="tab">
-                        <li class="on"><a href="#">시그니쳐</a></li>
-                        <li><a href="#">베이커리</a></li>
-                        <li><a href="#">콜드 드링크</a></li>
-                        <li><a href="#">커피</a></li>
-                        <li><a href="#">두배우유</a></li>
-                        <li><a href="#">콜라보메뉴 </a></li>
-                    </ul>
-                </div>
-                <div class="content1 swiper station5"> 
-                    <ul class="content_items swiper-wrapper">
-                        <li class="items_list swiper-slide on">
-                            <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
-                            <div>
-                                <h2>까이딴자이<br>
-                                    (홍콩식 에그와플)</h2>
-                                <p>올록 볼록한 특이한 와플 모양으로 주목을 받는 것은 물론이고,<br>
-                                    겉은 바삭하고 속은 쫀득하며 다양한 재료들이 반죽안에 들어가<br>
-                                    새로운 맛들을 만들어내고 있습니다.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="items_list swiper-slide">
-                            <img src="./img/drink/milkTea.png" alt="milkTea">
-                            <div>
-                                <h2>스타킹 밀크티<br>
-                                    (홍콩행 밀크티)</h2>
-                                <p>홍콩식 밀크티로 우유보다 홍차의 비율이 높아<br>
-                                    조금 더 깔끔하고 향긋한 밀크티를 즐기실 수 있습니다.<br>
-                                    밀크티의 텁텁함이 싫었던 분들에게 추천드리는 스타킹 밀크티입니다.
-                                    </p>
-                            </div>
-                        </li>
-                        <li class="items_list swiper-slide">
-                            <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
-                            <div>
-                                <h2>동윤영<br>
-                                    (밀크티와 커피의 만남)</h2>
-                                <p>밀크티와 커피가 만나더욱 특별한 향을 가진 홍콩식 라떼입니다.<br>
-                                    중독성이 강한 맛이라서 단골이 되실 분들만 맛봐주세요.</p>
-                            </div>
-                        </li>
-                        <li class="items_list swiper-slide">
-                            <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
-                            <div>
-                                <h2>동링차<br>
-                                    (레몬 가득 아이스티)</h2>
-                                <p>밀크티와 동윤영에 니즈가 없는 고객들이 많이 찾는 메뉴로<br>
-                                생레몬과 함께 제공하여 상큼하고 달달한 맛이 일품입니다.</p>
-                            </div>
-                        </li>
-                        <li class="items_list swiper-slide">
-                            <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
-                           <div>
-                            <h2>란퐁유엔<br>
-                                (홍콩식 프렌치 토스트)</h2>
-                                <p>홍콩식 프렌치토스트로 통으로 튀겨낸 빵에 <br>
-                                    버터를 가운데 녹여 연유를 뿌려먹는 단짠단짠한 디저트입니다.</p>
-                           </div>
-                        </li>
-                    </ul>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-                <div class="content2_bottom">
-                    <ul class="content_items ">
-                        <li class="swiper station6 on content_list">
-                            <h2>시그니쳐 MENU</h2>
-                            <p>※메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</p>
-                            <ul class="swiper-wrapper bot_lists">
-                                <li class="swiper-slide bot_items on">
-                                    <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
-                                    <h2>까이딴자이</h2>
-                                    <p>푹신한 식감과 계란<br>
-                                    베이스 반죽으로 구현한<br>
-                                    은은한 단미가 느껴지는<br>
-                                    에그와플</p>
-                                </li>
-                                <li class="swiper-slide bot_items">
-                                    <img src="./img/drink/milkTea.png" alt="milkTea">
-                                    <h2>홍콩행 밀크티</h2>
-                                    <p>수제로 제조된 홍차<br>
-                                    액상과 깊은 맛을 표현 할<br>
-                                    두배의 단백질이 함유된<br>
-                                    전용 우유를 사용하여<br>
-                                    만든 밀크티</p>
-                                </li>
-                                <li class="swiper-slide bot_items">
-                                    <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
-                                    <h2>동윤영</h2>
-                                    <p>홍차의 카페인과<br>
-                                    에스프레소가 더해져<br>
-                                    부드러운 고카페인 음료  </p>
-                                </li>
-                                <li class="swiper-slide bot_items">
-                                    <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
-                                    <h2>동링차 </h2>
-                                    <p>홍차 베이스에 레몬<br>
-                                        액상을 섞어 만드는<br>
-                                        홍콩식 레몬 아이스티<br>
-                                        동링차 </p>
-                                 </li>
-                                <li class="swiper-slide bot_items">
-                                    <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
-                                    <h2>랑퐁유엔</h2>
-                                    <p>단짠단짠 홍콩식<br>
-                                        프렌치 토스트</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="swiper station6 content_list">
-                            <h2>베이커리 MENU</h2>
-                            <p>※메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</p>
-                            <ul class="swiper-wrapper">
-                                <li class="swiper-slide bot_items">
-                                    <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
-                                    <h2>까이딴자이</h2>
-                                    <p>푹신한 식감과 계란<br>
-                                    베이스 반죽으로 구현한<br>
-                                    은은한 단미가 느껴지는<br>
-                                    에그와플</p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/milkTea.png" alt="milkTea">
-                                    <h2>홍콩행 밀크티</h2>
-                                    <p>수제로 제조된 홍차<br>
-                                    액상과 깊은 맛을 표현 할<br>
-                                    두배의 단백질이 함유된<br>
-                                    전용 우유를 사용하여<br>
-                                    만든 밀크티</p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
-                                    <h2>동윤영</h2>
-                                    <p>홍차의 카페인과<br>
-                                    에스프레소가 더해져<br>
-                                    부드러운 고카페인 음료  </p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
-                                    <h2>동링차 </h2>
-                                    <p>홍차 베이스에 레몬<br>
-                                        액상을 섞어 만드는<br>
-                                        홍콩식 레몬 아이스티<br>
-                                        동링차 </p>
-                                 </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
-                                    <h2>랑퐁유엔</h2>
-                                    <p>단짠단짠 홍콩식<br>
-                                        프렌치 토스트</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="swiper station6 content_list">
-                            <h2>콜드 드링크 MENU</h2>
-                            <p>※메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</p>
-                            <ul class="swiper-wrapper">
-                                <li class="swiper-slide bot_items">
-                                    <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
-                                    <h2>까이딴자이</h2>
-                                    <p>푹신한 식감과 계란<br>
-                                    베이스 반죽으로 구현한<br>
-                                    은은한 단미가 느껴지는<br>
-                                    에그와플</p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/milkTea.png" alt="milkTea">
-                                    <h2>홍콩행 밀크티</h2>
-                                    <p>수제로 제조된 홍차<br>
-                                    액상과 깊은 맛을 표현 할<br>
-                                    두배의 단백질이 함유된<br>
-                                    전용 우유를 사용하여<br>
-                                    만든 밀크티</p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
-                                    <h2>동윤영</h2>
-                                    <p>홍차의 카페인과<br>
-                                    에스프레소가 더해져<br>
-                                    부드러운 고카페인 음료  </p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
-                                    <h2>동링차 </h2>
-                                    <p>홍차 베이스에 레몬<br>
-                                        액상을 섞어 만드는<br>
-                                        홍콩식 레몬 아이스티<br>
-                                        동링차 </p>
-                                 </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
-                                    <h2>랑퐁유엔</h2>
-                                    <p>단짠단짠 홍콩식<br>
-                                        프렌치 토스트</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="swiper station6 content_list">
-                            <h2>두배우유 MENU</h2>
-                            <p>※메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</p>
-                            <ul class="swiper-wrapper">
-                                <li class="swiper-slide bot_items">
-                                    <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
-                                    <h2>까이딴자이</h2>
-                                    <p>푹신한 식감과 계란<br>
-                                    베이스 반죽으로 구현한<br>
-                                    은은한 단미가 느껴지는<br>
-                                    에그와플</p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/milkTea.png" alt="milkTea">
-                                    <h2>홍콩행 밀크티</h2>
-                                    <p>수제로 제조된 홍차<br>
-                                    액상과 깊은 맛을 표현 할<br>
-                                    두배의 단백질이 함유된<br>
-                                    전용 우유를 사용하여<br>
-                                    만든 밀크티</p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
-                                    <h2>동윤영</h2>
-                                    <p>홍차의 카페인과<br>
-                                    에스프레소가 더해져<br>
-                                    부드러운 고카페인 음료  </p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
-                                    <h2>동링차 </h2>
-                                    <p>홍차 베이스에 레몬<br>
-                                        액상을 섞어 만드는<br>
-                                        홍콩식 레몬 아이스티<br>
-                                        동링차 </p>
-                                 </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
-                                    <h2>랑퐁유엔</h2>
-                                    <p>단짠단짠 홍콩식<br>
-                                        프렌치 토스트</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="swiper station6 content_list">
-                            <h2>콜라보 MENU</h2>
-                            <p>※메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</p>
-                            <ul class="swiper-wrapper">
-                                <li class="swiper-slide">
-                                    <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
-                                    <h2>까이딴자이</h2>
-                                    <p>푹신한 식감과 계란<br>
-                                    베이스 반죽으로 구현한<br>
-                                    은은한 단미가 느껴지는<br>
-                                    에그와플</p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/milkTea.png" alt="milkTea">
-                                    <h2>홍콩행 밀크티</h2>
-                                    <p>수제로 제조된 홍차<br>
-                                    액상과 깊은 맛을 표현 할<br>
-                                    두배의 단백질이 함유된<br>
-                                    전용 우유를 사용하여<br>
-                                    만든 밀크티</p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
-                                    <h2>동윤영</h2>
-                                    <p>홍차의 카페인과<br>
-                                    에스프레소가 더해져<br>
-                                    부드러운 고카페인 음료  </p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
-                                    <h2>동링차 </h2>
-                                    <p>홍차 베이스에 레몬<br>
-                                        액상을 섞어 만드는<br>
-                                        홍콩식 레몬 아이스티<br>
-                                        동링차 </p>
-                                 </li>
-                                <li class="swiper-slide">
-                                    <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
-                                    <h2>랑퐁유엔</h2>
-                                    <p>단짠단짠 홍콩식<br>
-                                        프렌치 토스트</p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="footerLogo">
-                <h1>
-                    <a href="./main.html">
-                        <img src="./img/headerLogo.png" alt="홍콩다방 로고">
-                    </a>
-                </h1>
-            </div>
-            <div class="footerInfo">
-                <p>주식회사 홍콩다방코리아 ｜ 대표자 : 김원화 ｜ 법인등록번호: 110111-7702817 ｜
-                </p>
-                <p>사업자등록번호 : 889-87-02061 ｜ 문의번호 : 1811-9657
-                </p>
-                <p>이메일 주소 : contact@hkdabang.com｜ 주소 : 서울특별시 영등포구 당산로41길 11, 제7층 제이703호 (당산동4가, 당산 SK V1 center)
-                </p>
-            </div>
-            <div class="footerSns">
+            <nav>
                 <ul>
-                    <li><a href="https://www.youtube.com/results?search_query=%ED%99%8D%EC%BD%A9%EB%8B%A4%EB%B0%A9"><img src="./img/youtube-line (1).svg" alt="youtube"></a></li>
-                    <li><a href="https://www.instagram.com/hongkongdabang_korea/?hl=ko"><img src="./img/insta.png" alt="instagram"></a></li>
-                    <li><a href="https://www.facebook.com/people/%ED%99%8D%EC%BD%A9%EB%8B%A4%EB%B0%A9_hongkongdabang/100063591938117/"><img src="./img/facebook-line.svg" alt="facebook"></a></li>
+                    <li><a href="#">홍콩다방</a></li>
+                    <li><a href="./sub1.html">메뉴</a>
+                        <ul>
+                            <li><a href="#">시그니쳐</a></li>
+                            <li><a href="#">베이커리</a></li>
+                            <li><a href="#">콜드 드링크</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">두배우유</a></li>
+                            <li><a href="#">콜라보메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub2.html">매장안내</a></li>
+                    <li class="Establishment"><a href="./sub3.html">창업문의</a>
+                        <ul>
+                            <li><a href="#">사업장 협업 문의</a></li>
+                            <li><a href="#">가맹 절차 및 비용</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="subpage11">
+            <div class="subtab tabMenu">
+                <h1>MENU</h1>
+                <ul class="tab">
+                    <li class="on"><a href="#">시그니쳐</a></li>
+                    <li><a href="#">베이커리</a></li>
+                    <li><a href="#">콜드 드링크</a></li>
+                    <li><a href="#">커피</a></li>
+                    <li><a href="#">두배우유</a></li>
+                    <li><a href="#">콜라보메뉴 </a></li>
                 </ul>
             </div>
-            <span class="footerTop">
-                <a href="#"><img src="./img/arrow-up-line.svg" alt="top"></a>
-            </span>
-        </footer>
-    </div>
+            <div class="content1 swiper station5"> 
+                <ul class="content_items swiper-wrapper">
+                    <li class="items_list swiper-slide on">
+                        <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
+                        <div>
+                            <h2>까이딴자이<br>
+                                (홍콩식 에그와플)</h2>
+                            <p>올록 볼록한 특이한 와플 모양으로 주목을 받는 것은 물론이고,<br>
+                                겉은 바삭하고 속은 쫀득하며 다양한 재료들이 반죽안에 들어가<br>
+                                새로운 맛들을 만들어내고 있습니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="items_list swiper-slide">
+                        <img src="./img/drink/milkTea.png" alt="milkTea">
+                        <div>
+                            <h2>스타킹 밀크티<br>
+                                (홍콩행 밀크티)</h2>
+                            <p>홍콩식 밀크티로 우유보다 홍차의 비율이 높아<br>
+                                조금 더 깔끔하고 향긋한 밀크티를 즐기실 수 있습니다.<br>
+                                밀크티의 텁텁함이 싫었던 분들에게 추천드리는 스타킹 밀크티입니다.
+                                </p>
+                        </div>
+                    </li>
+                    <li class="items_list swiper-slide">
+                        <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
+                        <div>
+                            <h2>동윤영<br>
+                                (밀크티와 커피의 만남)</h2>
+                            <p>밀크티와 커피가 만나더욱 특별한 향을 가진 홍콩식 라떼입니다.<br>
+                                중독성이 강한 맛이라서 단골이 되실 분들만 맛봐주세요.</p>
+                        </div>
+                    </li>
+                    <li class="items_list swiper-slide">
+                        <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
+                        <div>
+                            <h2>동링차<br>
+                                (레몬 가득 아이스티)</h2>
+                            <p>밀크티와 동윤영에 니즈가 없는 고객들이 많이 찾는 메뉴로<br>
+                            생레몬과 함께 제공하여 상큼하고 달달한 맛이 일품입니다.</p>
+                        </div>
+                    </li>
+                    <li class="items_list swiper-slide">
+                        <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
+                        <div>
+                        <h2>란퐁유엔<br>
+                            (홍콩식 프렌치 토스트)</h2>
+                            <p>홍콩식 프렌치토스트로 통으로 튀겨낸 빵에 <br>
+                                버터를 가운데 녹여 연유를 뿌려먹는 단짠단짠한 디저트입니다.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="content2_bottom">
+                <ul class="content_items ">
+                    <li class="swiper station6 on content_list">
+                        <h2>시그니쳐 MENU</h2>
+                        <p>※메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</p>
+                        <ul class="swiper-wrapper bot_lists">
+                            <li class="swiper-slide bot_items on">
+                                <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
+                                <h2>까이딴자이</h2>
+                                <p>푹신한 식감과 계란<br>
+                                베이스 반죽으로 구현한<br>
+                                은은한 단미가 느껴지는<br>
+                                에그와플</p>
+                            </li>
+                            <li class="swiper-slide bot_items">
+                                <img src="./img/drink/milkTea.png" alt="milkTea">
+                                <h2>홍콩행 밀크티</h2>
+                                <p>수제로 제조된 홍차<br>
+                                액상과 깊은 맛을 표현 할<br>
+                                두배의 단백질이 함유된<br>
+                                전용 우유를 사용하여<br>
+                                만든 밀크티</p>
+                            </li>
+                            <li class="swiper-slide bot_items">
+                                <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
+                                <h2>동윤영</h2>
+                                <p>홍차의 카페인과<br>
+                                에스프레소가 더해져<br>
+                                부드러운 고카페인 음료  </p>
+                            </li>
+                            <li class="swiper-slide bot_items">
+                                <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
+                                <h2>동링차 </h2>
+                                <p>홍차 베이스에 레몬<br>
+                                    액상을 섞어 만드는<br>
+                                    홍콩식 레몬 아이스티<br>
+                                    동링차 </p>
+                                </li>
+                            <li class="swiper-slide bot_items">
+                                <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
+                                <h2>랑퐁유엔</h2>
+                                <p>단짠단짠 홍콩식<br>
+                                    프렌치 토스트</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="swiper station6 content_list">
+                        <h2>베이커리 MENU</h2>
+                        <p>※메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</p>
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide bot_items">
+                                <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
+                                <h2>까이딴자이</h2>
+                                <p>푹신한 식감과 계란<br>
+                                베이스 반죽으로 구현한<br>
+                                은은한 단미가 느껴지는<br>
+                                에그와플</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/milkTea.png" alt="milkTea">
+                                <h2>홍콩행 밀크티</h2>
+                                <p>수제로 제조된 홍차<br>
+                                액상과 깊은 맛을 표현 할<br>
+                                두배의 단백질이 함유된<br>
+                                전용 우유를 사용하여<br>
+                                만든 밀크티</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
+                                <h2>동윤영</h2>
+                                <p>홍차의 카페인과<br>
+                                에스프레소가 더해져<br>
+                                부드러운 고카페인 음료  </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
+                                <h2>동링차 </h2>
+                                <p>홍차 베이스에 레몬<br>
+                                    액상을 섞어 만드는<br>
+                                    홍콩식 레몬 아이스티<br>
+                                    동링차 </p>
+                                </li>
+                            <li class="swiper-slide">
+                                <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
+                                <h2>랑퐁유엔</h2>
+                                <p>단짠단짠 홍콩식<br>
+                                    프렌치 토스트</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="swiper station6 content_list">
+                        <h2>콜드 드링크 MENU</h2>
+                        <p>※메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</p>
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide bot_items">
+                                <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
+                                <h2>까이딴자이</h2>
+                                <p>푹신한 식감과 계란<br>
+                                베이스 반죽으로 구현한<br>
+                                은은한 단미가 느껴지는<br>
+                                에그와플</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/milkTea.png" alt="milkTea">
+                                <h2>홍콩행 밀크티</h2>
+                                <p>수제로 제조된 홍차<br>
+                                액상과 깊은 맛을 표현 할<br>
+                                두배의 단백질이 함유된<br>
+                                전용 우유를 사용하여<br>
+                                만든 밀크티</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
+                                <h2>동윤영</h2>
+                                <p>홍차의 카페인과<br>
+                                에스프레소가 더해져<br>
+                                부드러운 고카페인 음료  </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
+                                <h2>동링차 </h2>
+                                <p>홍차 베이스에 레몬<br>
+                                    액상을 섞어 만드는<br>
+                                    홍콩식 레몬 아이스티<br>
+                                    동링차 </p>
+                                </li>
+                            <li class="swiper-slide">
+                                <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
+                                <h2>랑퐁유엔</h2>
+                                <p>단짠단짠 홍콩식<br>
+                                    프렌치 토스트</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="swiper station6 content_list">
+                        <h2>두배우유 MENU</h2>
+                        <p>※메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</p>
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide bot_items">
+                                <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
+                                <h2>까이딴자이</h2>
+                                <p>푹신한 식감과 계란<br>
+                                베이스 반죽으로 구현한<br>
+                                은은한 단미가 느껴지는<br>
+                                에그와플</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/milkTea.png" alt="milkTea">
+                                <h2>홍콩행 밀크티</h2>
+                                <p>수제로 제조된 홍차<br>
+                                액상과 깊은 맛을 표현 할<br>
+                                두배의 단백질이 함유된<br>
+                                전용 우유를 사용하여<br>
+                                만든 밀크티</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
+                                <h2>동윤영</h2>
+                                <p>홍차의 카페인과<br>
+                                에스프레소가 더해져<br>
+                                부드러운 고카페인 음료  </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
+                                <h2>동링차 </h2>
+                                <p>홍차 베이스에 레몬<br>
+                                    액상을 섞어 만드는<br>
+                                    홍콩식 레몬 아이스티<br>
+                                    동링차 </p>
+                                </li>
+                            <li class="swiper-slide">
+                                <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
+                                <h2>랑퐁유엔</h2>
+                                <p>단짠단짠 홍콩식<br>
+                                    프렌치 토스트</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="swiper station6 content_list">
+                        <h2>콜라보 MENU</h2>
+                        <p>※메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</p>
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="./img/bak/eggWaffle.png" alt="eggWaffle">
+                                <h2>까이딴자이</h2>
+                                <p>푹신한 식감과 계란<br>
+                                베이스 반죽으로 구현한<br>
+                                은은한 단미가 느껴지는<br>
+                                에그와플</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/milkTea.png" alt="milkTea">
+                                <h2>홍콩행 밀크티</h2>
+                                <p>수제로 제조된 홍차<br>
+                                액상과 깊은 맛을 표현 할<br>
+                                두배의 단백질이 함유된<br>
+                                전용 우유를 사용하여<br>
+                                만든 밀크티</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/MilkteaCoffee.png" alt="MilkteaCoffee">
+                                <h2>동윤영</h2>
+                                <p>홍차의 카페인과<br>
+                                에스프레소가 더해져<br>
+                                부드러운 고카페인 음료  </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/drink/lemonIcedTea.png" alt="lemonIcedTea">
+                                <h2>동링차 </h2>
+                                <p>홍차 베이스에 레몬<br>
+                                    액상을 섞어 만드는<br>
+                                    홍콩식 레몬 아이스티<br>
+                                    동링차 </p>
+                                </li>
+                            <li class="swiper-slide">
+                                <img src="./img/bak/lanFongYuen.png" alt="lanFongYuen">
+                                <h2>랑퐁유엔</h2>
+                                <p>단짠단짠 홍콩식<br>
+                                    프렌치 토스트</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerLogo">
+            <h1>
+                <a href="./main.html">
+                    <img src="./img/headerLogo.png" alt="홍콩다방 로고">
+                </a>
+            </h1>
+        </div>
+        <div class="footerInfo">
+            <p>주식회사 홍콩다방코리아 ｜ 대표자 : 김원화 ｜ 법인등록번호: 110111-7702817 ｜
+            </p>
+            <p>사업자등록번호 : 889-87-02061 ｜ 문의번호 : 1811-9657
+            </p>
+            <p>이메일 주소 : contact@hkdabang.com｜ 주소 : 서울특별시 영등포구 당산로41길 11, 제7층 제이703호 (당산동4가, 당산 SK V1 center)
+            </p>
+        </div>
+        <div class="footerSns">
+            <ul>
+                <li><a href="https://www.youtube.com/results?search_query=%ED%99%8D%EC%BD%A9%EB%8B%A4%EB%B0%A9"><img src="./img/youtube-line (1).svg" alt="youtube"></a></li>
+                <li><a href="https://www.instagram.com/hongkongdabang_korea/?hl=ko"><img src="./img/insta.png" alt="instagram"></a></li>
+                <li><a href="https://www.facebook.com/people/%ED%99%8D%EC%BD%A9%EB%8B%A4%EB%B0%A9_hongkongdabang/100063591938117/"><img src="./img/facebook-line.svg" alt="facebook"></a></li>
+            </ul>
+        </div>
+        <span class="footerTop">
+            <a href="#"><img src="./img/arrow-up-line.svg" alt="top"></a>
+        </span>
+    </footer>
 </body>
 </html>
