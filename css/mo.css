@@ -786,117 +786,122 @@
 
     /* subpage2 */
 
-    .subpage2{ 
+    .sub2{ 
         width: 100%;
         margin:0 auto;
         height: 100%;
     }
-    .subpage2>.subpage2_top{
+    .sub2_top{
         width:100%;
         margin:0 auto;
     }
-    .subpage2 .store_info{ 
+    .store_info{ 
         margin-top: 90px;
         color: #005841;
         text-align: center;
     }
-    .subpage2 .store_info>h1{
+    .store_info>h1{
         font-size: 3rem;
         font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 130px;
     }
-    .subpage2 .store_info>p{
+    .store_info>p{
         font-size: 0.9rem;
+        margin-bottom: 70px;
     }
-    .subpage2 .map{
+    .map{
         border: 1px solid #005841;
+        width: 100%;
     }
-    .subpage2 .map .service_search>h3{
+    .service_search{
+        margin-top:50px;
+        padding-left:40px;
+    }
+    .service_search>h3{
         font-size: 1.5rem;
+        margin-bottom: 15px;
     }
-    .subpage2 .map .service_search>li{
-        /* padding-bottom: 15px; */
+    .service_search>li{
         font-size: 1.2rem;
+        margin-bottom: 10px;
+        margin-left: 20px;
     }
-    .subpage2 .area_search h3{
+    .area_search{
+        margin-top: 40px;
+        padding-left:40px;
+    }
+    .area_search h3{
         font-size: 1.5rem;
-        /* padding-bottom: 20px; */
+        margin-bottom: 20px;
     }
-    .subpage2 .area_search p>label{
+    .area_search p>label{
         font-size:0;
-        padding-bottom: 20px;
     }
-    .subpage2 .area_search p>input{
+    .area_search p>input{
         padding: 5px 40px;
         font-size: 1.1rem;
-        margin-bottom: 125px;
+        margin-bottom: 120px;
     }
-
-    .subpage2 .area_search .result>ul>li{
+    .result{
+        margin-bottom: 80px;
+    }
+    .result>ul>li{
         font-size: 1.1em;
         margin-right: 50px;
         padding-bottom: 10px;
     }
-    .subpage2 .area_search>li>ul>.search_bg{
+    .search_bg{
         font-size: 0.9rem;
         background: #005841;
         color: #fff;;
         padding: 10px 43px;
         margin-bottom: 100px;
     }
-    .subpage2>.subpage2_bottom{
-        border-top: 1px solid #005841;
-        margin-top: 53px;
+    .sub2_bottom{
+        border-top: 1px solid #005841; 
+        padding-top: 20px;
     }
-    .subpage2>.subpage2_bottom .store_button{
-        margin: 25px;
+    .store_button{
+        margin: 40px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .subpage2>.subpage2_bottom .store_button>li{
+    .store_button>li{
         margin: 10px 6px;
         background: #e7e2e2;
         padding: 10px 12px;
-        font-family: 'NanumSquareNeo-Variable';
         font-weight: bold;
         border-radius: 11px;
         transition: all 0.1s ease 0s;
     }
-    .subpage2>.subpage2_bottom .store_button>li:hover{
+    .store_button>li:hover{
         transform: scale(1.2);
 
     }
-    .subpage2>.subpage2_bottom .store_list{
-        width: 100%;
+    .store_list{
+        width: 90%;
         margin: 0 auto;
-        font-family: 'NanumSquareNeo-Variable';
         font-weight: bold;
+        margin-top: 90px;
     }
-    .subpage2>.subpage2_bottom .store_list>li{
-        margin:20px 0;
-    }
-    .subpage2>.subpage2_bottom .store_list>li>h3{
-        font-size: 1.2rem;
+    .store_list>li>h3{
+        font-size: 1.3rem;
         margin-bottom: 40px;
     }
-    .subpage2>.subpage2_bottom .store_list>li:first-of-type{
-        /* margin-top:150px; */
+    .store_list>li:last-of-type{
+        margin-bottom: 130px;
     }
-    .subpage2>.subpage2_bottom .store_list>li:last-of-type{
-        margin-bottom: 200px;
-    }
-    .subpage2>.subpage2_bottom .store_list>li>ul{
-        display: flex;
-        align-items: center;
-    }
-    .subpage2>.subpage2_bottom .store_list>li>ul>li{
-        margin-right: 30px;
+    .store_list>li>ul>li{
         background: #f9f6f4;
         text-align: center;
-        padding: 10px 0;
-        width: 250px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 15px 0;
+        margin-bottom: 25px;
     }
-    .subpage2 .store_list>li>ul>li:hover{
+    .store_list>li>ul>li:hover{
         background: #005841;
         color: #fff;
     }
