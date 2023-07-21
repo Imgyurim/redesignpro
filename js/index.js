@@ -1,6 +1,6 @@
 window.onload = function(){
   
-    // station1
+    // 메인페이지 station1
     let station1 = new Swiper(".station1",{
      loop:true,
      direction:"horizontal",
@@ -17,7 +17,7 @@ window.onload = function(){
        speed:10
     });
 
-    // station2
+    // 메인페이지 station2
     let station2 = new Swiper(".station2",{
       effect : 'cube',
       cubeEffect : {
@@ -52,7 +52,8 @@ window.onload = function(){
         },
      });
 
-     let station5 = new Swiper(".subpage11 .station5",{
+    //  서브페이지1_1
+     let station5 = new Swiper(".station5",{
       loop:true,
       direction:"horizontal",
         navigation: {

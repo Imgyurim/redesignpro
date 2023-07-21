@@ -47,10 +47,10 @@ $(document).ready(function(){
 
     })
     
-
-    $("main .tab>li").click(function(){
+// 메인페이지 카테고리?
+    $(".maintab>li").click(function(){
         let idx = $(this).index()
-        $("main .tab>li").removeClass("on")
+        $(".maintab>li").removeClass("on")
         $(this).addClass("on")
 
         $(".bg_category > .bg_items").removeClass("on")
@@ -61,13 +61,13 @@ $(document).ready(function(){
 
     });
 
-    $("main .menu_img>li").click(function(){
+    $(".menu_img>li").click(function(){
         let idx = $(this).index()
-        $("main .menu_img>li").removeClass("on")
+        $(".menu_img>li").removeClass("on")
         $(this).addClass("on")
 
-        $(".top_img > li").removeClass("on")
-        $(".top_img > li").eq(idx).addClass("on")
+        $(".topping_img > li").removeClass("on")
+        $(".topping_img > li").eq(idx).addClass("on")
     });
 
     $("main .slide> .btnNext").click(function(e){
@@ -80,56 +80,57 @@ $(document).ready(function(){
         $(".train").css("transform","translateX("+(count*-16)+"%)")
     });
 
-    // let S1tab = document.querySelectorAll(".subpage1 .tap>li");
-    // let S1con = document.querySelectorAll(".subpage1 .content>li");
-    $(".sub1  .tap>li").click(function(){
+    let count = 0;
+    $(".slide .btnNext").click(function(e){
+     e.preventDefault()
+     count++
+     //기차가 왼쪽으로 500픽셀
+     if(count>5){count=0}
+     $(".slide_R .train").css("transform","translateX("+(-16.666*count)+"%)")
+     $(".slide_L .train").css("transform","translateX("+(-16.666*count)+"%)")
+ 
+     // moveSlider(count)
+     })
+     $(".slide .btnPrev").click(function(e){
+         e.preventDefault()
+         count--
+         if(count<0){count=5} //예외처리
+         // moveSlider(count)
+         
+     });
+ 
+
+    // 서브페이지1
+    $(".subtaplist>li").click(function(){
          let idx = $(this).index()
-        $(".sub1 .tap>li").removeClass("on")
+        $(".subtaplist>li").removeClass("on")
         $(this).addClass("on")
 
-        $(".sub1 .content>li").removeClass("on")
-        $(".sub1 .content>li").eq(idx).addClass("on")
+        $(".subcon>li").removeClass("on")
+        $(".subcon>li").eq(idx).addClass("on")
 
-        let liHeight = $(".content>li.on").height()
-        $(".content").height(liHeight)
+        let liHeight = $(".subcon>li.on").height()
+        $(".s ubcon").height(liHeight)
 
     });
 
-   let count = 0;
-   $(".slide .btnNext").click(function(e){
-    e.preventDefault()
-    count++
-    //기차가 왼쪽으로 500픽셀
-    if(count>5){count=0}
-    $(".slide_R .train").css("transform","translateX("+(-16.666*count)+"%)")
-    $(".slide_L .train").css("transform","translateX("+(-16.666*count)+"%)")
-
-    // moveSlider(count)
-    })
-    $(".slide .btnPrev").click(function(e){
-        e.preventDefault()
-        count--
-        if(count<0){count=5} //예외처리
-        // moveSlider(count)
-        
-    });
-
-    $(".subpage11 .tab>li").click(function(){
+    // 서브페이지1_1
+    $(".sub11tab>li").click(function(){
         let idx = $(this).index()
-        $(".subpage11 .tab>li").removeClass("on")
+        $(".sub11tab>li").removeClass("on")
         $(this).addClass("on")
         
-        $(".subpage11 .content_items > .content_list").removeClass("on")
-        $(".subpage11 .content_items > .content_list").eq(idx).addClass("on")
+        $(".content_items > .content_list").removeClass("on")
+        $(".content_items > .content_list").eq(idx).addClass("on")
        
-        $(".subpage11 .bot_list  .bot_items").removeClass("on")
-        $(".subpage11 .bot_list  .bot_items").eq(idx).addClass("on")
+        $(".bot_list .bot_items").removeClass("on")
+        $(".bot_list .bot_items").eq(idx).addClass("on")
 
-        $(".subpage11 .list > .list_top").removeClass("on")
-        $(".subpage11 .list > .list_top").eq(idx).addClass("on")
+        $(".list > .list_top").removeClass("on")
+        $(".list > .list_top").eq(idx).addClass("on")
     });
        
-    //    서브페이지3 탭메뉴
+    // 서브페이지3 탭메뉴
     $(".tab3>li").click(function(){
         let idx = $(this).index()
     $(".tab3>li").removeClass("on")
@@ -140,7 +141,6 @@ $(document).ready(function(){
     });
 
     // 서브페이지3 초기비용 탭메뉴
-
     $(".tabTip_b>li").click(function(){
         let idx = $(this).index()
         $(".tabTip_b>li").removeClass("on")
@@ -149,8 +149,5 @@ $(document).ready(function(){
         $(".cost_text > li").removeClass("on")
         $(".cost_text > li").eq(idx).addClass("on")
     });
-
-
-
 
 })
