@@ -1,6 +1,6 @@
 window.onload = function(){
   
-    // 메인페이지 station1
+    // 배너슬라이드
     let station1 = new Swiper(".station1",{
      loop:true,
      direction:"horizontal",
@@ -17,7 +17,7 @@ window.onload = function(){
        speed:10
     });
 
-    // 메인페이지 station2
+    // 컨셉 슬라이드
     let station2 = new Swiper(".station2",{
       effect : 'cube',
       cubeEffect : {
@@ -36,11 +36,10 @@ window.onload = function(){
 
     });
 
-    // sns
+    // sns 슬라이드
     let station4 = new Swiper(".sns .station4",{
       loop:true,
       spaceBetween:10,
-        slidesPerView: 4,
         autoplay:true,
         pagination: {
           el: ".swiper-pagination",
@@ -50,9 +49,17 @@ window.onload = function(){
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+          220: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 5,
+          },
+        },
      });
 
-    //  서브페이지1_1
+    //  서브페이지1-1 슬라이드 top
      let station5 = new Swiper(".station5",{
       loop:true,
       direction:"horizontal",
@@ -62,14 +69,22 @@ window.onload = function(){
        },
      });
 
-     let station6 = new Swiper(".subpage11 .station6",{
+     //  서브페이지1-1 슬라이드 bottom
+     let station6 = new Swiper(".station6",{
       loop:true,
       direction:"horizontal",
-      slidesPerView: 4,
         navigation: {
          nextEl: '.swiper-button-next',
          prevEl: '.swiper-button-prev',
        },
+       breakpoints: {
+        220: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+      },
      });
 
     // 모바일 메뉴
@@ -87,6 +102,8 @@ window.onload = function(){
          }) 
 
 
-
+         document.cookie = "safeCookie1=foo; SameSite=Lax"; 
+         document.cookie = "safeCookie2=foo"; 
+         document.cookie = "crossCookie=bar; SameSite=None; Secure";
 }
  

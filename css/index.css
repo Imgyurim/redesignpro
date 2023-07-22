@@ -24,3 +24,10 @@ html{
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
 }
+/* 스와이퍼 좌우버튼 */
+.swiper-button-next:after{
+    color: #fff;
+}
+.swiper-button-prev:after{
+    color: #fff;
+}

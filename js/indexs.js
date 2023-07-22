@@ -2,11 +2,11 @@ $(document).ready(function(){
     // 페이지 스크롤
     $(window).scroll(function(){
         let winst = $(window).scrollTop()
-        let pagetop = $(".station1").offset().top
+        let pagetop = $("main .station1").offset().top
         if(winst>=pagetop){
-            $(".station1").addClass("on")
+            $("main .station1").addClass("on")
         }else{
-            $(".station1").removeClass("on")
+            $("main .station1").removeClass("on")
         }
     })
     $("main>div").click(function(){})
@@ -45,9 +45,11 @@ $(document).ready(function(){
     }
     return
 
-    })
+    }),
     
-// 메인페이지 카테고리?
+
+// 메인페이지 카테고리
+
     $(".maintab>li").click(function(){
         let idx = $(this).index()
         $(".maintab>li").removeClass("on")
@@ -110,7 +112,7 @@ $(document).ready(function(){
         $(".subcon>li").eq(idx).addClass("on")
 
         let liHeight = $(".subcon>li.on").height()
-        $(".s ubcon").height(liHeight)
+        $(".subcon").height(liHeight)
 
     });
 
