@@ -73,7 +73,7 @@
 
     /* main */
     .main{
-        margin-top:95px;
+        margin-top: 81px;
     }
     .station1{
         width: 100%;
@@ -261,9 +261,9 @@
     }
     .maincontent .maincontent_list{
         overflow: hidden;
-        transform: translateX(-26%);
-    }
-    .menu_img{
+         transform: translateX(-17%);
+}
+.menu_img{
         cursor: pointer;
     }
     .menu_img>li{
@@ -602,6 +602,7 @@
         background: #005841;
         color: #fff;
         border-radius: 50% 50% 0 0;
+        position: relative;
     }
     .snsTitle{
         display: flex;
@@ -629,7 +630,7 @@
     .station4{
         width: 100%;
         height: 100%;
-        margin-top: 50px;
+        margin-top: 50px
     }
     .snsList .snsSlide{
         text-align: center;
@@ -642,14 +643,20 @@
         width: 100%;
         object-fit:contain;
     }
-    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    .station4 .swiper-button-next{
+        color:#fff;
+        position: absolute;
+        right: 0%;
+        top: 17%;
+    }
+    .station4 .swiper-button-prev{
+        position: absolute;
+        left: 0%;
+        top: 17%;
         color:#fff;
     }
-    .swiper-button-prev, .swiper-rtl .swiper-button-next{
-        color:#000;
-    }
-    .swiper-pagination-progressbar-fill{
-        background: #fff;
+    .station4 .swiper-pagination-progressbar-fill{
+        color: #fff;
     }
 
     /* subpage1 */
@@ -688,11 +695,10 @@
         margin-top: 100px;
         display: flex;
         flex-wrap: wrap;
+        height: 800px;
     }
-    .subcon ul{
+    .subcon>ul{
         display: flex;
-        /* flex-wrap: wrap; */
-
     }
     .subcontent .items>h2{
         color: #005841;
@@ -743,7 +749,7 @@
     }
     .subcontent .items>ul>li {
         padding-bottom: 150px;
-        flex: 25%;
+        width: 360px;
     }
     .subcontent .items>ul>li p {
         text-align: center;
@@ -769,7 +775,8 @@
         margin-bottom: 50px;
         display: flex;
         flex-wrap: wrap;
-        flex: 25%;
+        width: 300px;
+        margin-right: 60px;
     }
     .item4dep{
         display:flex;
@@ -1325,4 +1332,4 @@
         z-index: 10;
     }
 
-}
+    }

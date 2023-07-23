@@ -1,12 +1,12 @@
 $(document).ready(function(){
-    // 페이지 스크롤
+    // 메인페이지 페이지 스크롤
     $(window).scroll(function(){
         let winst = $(window).scrollTop()
-        let pagetop = $("main .station1").offset().top
+        let station2top = $(".station2").offset().top
         if(winst>=pagetop){
-            $("main .station1").addClass("on")
+            $(".station2").addClass("on")
         }else{
-            $("main .station1").removeClass("on")
+            $(".station2").removeClass("on")
         }
     })
     $("main>div").click(function(){})
@@ -72,6 +72,7 @@ $(document).ready(function(){
         $(".topping_img > li").eq(idx).addClass("on")
     });
 
+    // 창업 슬라이드
     $("main .slide> .btnNext").click(function(e){
         let count = 0;
         e.preventDefault() //클릭했을 때 a태그의 기본기능을 억제(스크롤바가 가장위로 올라가는 현상 방지)
@@ -121,9 +122,9 @@ $(document).ready(function(){
         let idx = $(this).index()
         $(".sub11tab>li").removeClass("on")
         $(this).addClass("on")
-        
-        $(".content_items > .content_list").removeClass("on")
-        $(".content_items > .content_list").eq(idx).addClass("on")
+
+        $(".content2_items > .content2_list").removeClass("on")
+        $(".content2_items > .content2_list").eq(idx).addClass("on")
        
         $(".bot_list .bot_items").removeClass("on")
         $(".bot_list .bot_items").eq(idx).addClass("on")

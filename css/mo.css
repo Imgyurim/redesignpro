@@ -161,10 +161,10 @@
             width: 100%;
         }
         .station2>.train>li img{
-            width: 230px;
+            width: 200px;
             height: 200px;
             object-fit: cover;
-            margin: 30px 149px;
+            margin: 35px 149px;
         }
         .s2_slideTxt{
             width: 90%;
@@ -172,24 +172,29 @@
             margin-bottom: 40px;
         }
         .s2_slideTxt h2 {
-            font-size: 20px; 
+            font-size: 18px; 
             font-weight: bold;
         }
         .s2_slideTxt p {
-            font-size: 18px;
+            font-size: 16px;
         }
         main .category{
-            display: flex;
             width: 100%;
             position: relative;
             flex-wrap: wrap;
+            background-color: #8890811c;
         }
         .bg_area{
             width: 100%;
             position:relative;
         }
+        .bg_category{
+            width: 600%;
+            display: flex;
+        }
         .bg_category>li{
             width: 100%;
+            height: 350px;
         }
         .bg_area>ul>li img{
             width: 100%;
@@ -202,17 +207,17 @@
         }
         .category_left{
             position: relative;
+            margin-top: 170px;
         }
         .maintabMenu{
-            /* position: absolute;
+            position: absolute;
             left: 0;
-            top:0;
-            width: 100%; */
+            top: -171px;
         }
         .maintabMenu h2{
             font-size: 25px;
             font-weight: bold;
-            padding-top: 30px;
+            padding-top: 15px;
             padding-bottom: 8px;
             padding-left: 30px;
     
@@ -221,25 +226,28 @@
             padding-top: 10px;
             display: flex;
             flex-wrap: wrap;
-            width: 80%;
+            width: 82%;
             margin: 0 auto;
             font-size: 18px;
             font-weight: bold;
         }
         .maintabMenu li{
-            flex:26%;
+            flex: 20%;
             text-align: center;
             padding: 5px;
-            margin-bottom: 5px;
-            margin-right: 5px;
+            margin-bottom: 10px;
+            margin-right: 10px;
             font-size: 18px;
             font-weight: bold;
-            background: #ffffffb0;
+            background: #fff;
     }
         .maincontent{
             width: 90%;
             margin: 0 auto;
             overflow: hidden;
+        }
+        .maincontent_list{
+            transform: translateX(-21px);
         }
         .maincontent>div{
             width: 100%;
@@ -254,15 +262,13 @@
             padding-left: 10px;
         }
         .maincontent img{
-            width: 240px;
+            width: 200px;
         }
         .maincontent .items{
             display: none;
         }
         .maincontent .items .on{
             display: block;
-        }
-        .station_sig>ul{
         }
         .topping{
             width: 90%;
