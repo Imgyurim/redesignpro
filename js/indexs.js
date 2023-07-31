@@ -2,8 +2,8 @@ $(document).ready(function(){
     // 메인페이지 페이지 스크롤
     $(window).scroll(function(){
         let winst = $(window).scrollTop()
-        let station2top = $(".station2").offset().top
-        if(winst>=pagetop){
+        let s2top = $(".station2").offset().top
+        if(winst>=s2top){
             $(".station2").addClass("on")
         }else{
             $(".station2").removeClass("on")
@@ -48,7 +48,7 @@ $(document).ready(function(){
     }),
     
 
-// 메인페이지 카테고리
+// category
 
     $(".maintab>li").click(function(){
         let idx = $(this).index()
@@ -58,22 +58,22 @@ $(document).ready(function(){
         $(".bg_category > .bg_items").removeClass("on")
         $(".bg_category > .bg_items").eq(idx).addClass("on")
 
-        $(".maincontent > .items").removeClass("on")
-        $(".maincontent > .items").eq(idx).addClass("on")
+        $(".maincontent > div").removeClass("on")
+        $(".maincontent > div").eq(idx).addClass("on")
 
     });
 
-    $(".menu_img>li").click(function(){
-        let idx = $(this).index()
-        $(".menu_img>li").removeClass("on")
-        $(this).addClass("on")
+    // $(".menu_img>li").click(function(){
+    //     let idx = $(this).index()
+    //     $(".menu_img>li").removeClass("on")
+    //     $(this).addClass("on")
 
-        $(".topping_img > li").removeClass("on")
-        $(".topping_img > li").eq(idx).addClass("on")
-    });
+    //     $(".topping_img > li").removeClass("on")
+    //     $(".topping_img > li").eq(idx).addClass("on")
+    // });
 
-    // 창업 슬라이드
-    $("main .slide> .btnNext").click(function(e){
+    // 협업 슬라이드
+    $(".slide> .btnNext").click(function(e){
         let count = 0;
         e.preventDefault() //클릭했을 때 a태그의 기본기능을 억제(스크롤바가 가장위로 올라가는 현상 방지)
         count++;
@@ -116,6 +116,17 @@ $(document).ready(function(){
         $(".subcon").height(liHeight)
 
     });
+
+      //각각의 메뉴리스트를 클릭했을 때 해당되는 영역으로 부드럽게 스크롤 이동될 수 있도록
+    $("nav li>a").click(function(){
+        e.preventDefault() // a태그가 갖고있는 기본기능을 제거
+
+        let target = $(this).attr("href")
+        //클릭한 a태그의 href속성에 저장된 속성값이 리턴되어 target변수에 저장된다.(문자데이터형태로 "#s1" "#s2" ...)
+        let target_top = $(target).offset().top
+        // $("html,body").animate({scrollTop:target_top},1000)    
+        moveScroll({top:target_top,speed:1000})
+    })
 
     // 서브페이지1_1
     $(".sub11tab>li").click(function(){

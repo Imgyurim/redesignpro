@@ -79,21 +79,21 @@
         width: 100%;
         height: 874px;
     }
-    .station1>.train{
+    .s1train{
         padding: 0;
     }
-    .station1>.train>li{
+    .s1train>li{
         width: 100%;
         height: 100%;
         position:relative;
     }
-    .station1>.train>li img{
+    .s1train>li img{
         width: 100%;
         height: 100%;
         object-fit: cover;
         filter: brightness(0.8);
     }
-    .s1_slideTxt{
+    .s1slideTxt{
         position: absolute; 
         width: 50%;
         left: 10%;
@@ -101,15 +101,15 @@
         color: #fff;
         padding: 10px;
     }
-    .s1_slideTxt p{    
+    .s1slideTxt p{    
         font-size: 3.6rem;
         font-weight: bold;
     }
-    .s1_slideTxt h2{
+    .s1slideTxt h2{
         font-size: 5rem;
         font-weight: bold;
     }
-    .s1_slideTxt{
+    .s1slideTxt{
         opacity: 1;
         transform: translateY(0px);
     }
@@ -120,40 +120,41 @@
     .station1 .swiper-pagination-bullet-active {    
         background: #005841;
     }
+
     .station2{
         width: 100%;
         height: 874px;
     }
-    .station2>.train>li{
+    .s2train>li{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .station2>.train>li img{
+    .s2train>li img{
         width: 500px;
     }
-    .s2_slideTxt h2 {
+    .s2slideTxt h2 {
         font-size: 70px;
         font-weight: bold;
     }
-    .s2_slideTxt p {
+    .s2slideTxt p {
         font-size: 30px;
         padding-top: 25px;
         padding-bottom: 60px;
     }
-    .station2>.train>.swiper-slide a{
+    .s2train .swiper-slide a{
         background: #005841;
         color: #fff;
         padding: 15px 30px;
         font-size: 1.2rem;
     }
-    .station2 .swiper-pagination-bullet{
+    .s2train .swiper-pagination-bullet{
         width: 20px;
         height: 15px;
         border-radius: 0;
         padding:0 5px;
     }
-    .station2 .swiper-pagination-bullet-active {    
+    .s2train .swiper-pagination-bullet-active {    
         background: #889081;
     }
     main .category{
@@ -259,11 +260,11 @@
         border-bottom:1px solid #005841;
     
     }
-    .maincontent .maincontent_list{
+    .maincontent_list{
         overflow: hidden;
          transform: translateX(-17%);
 }
-.menu_img{
+    .menu_img{
         cursor: pointer;
     }
     .menu_img>li{
@@ -306,6 +307,7 @@
         display: flex;
         color: #005841;
         border-top:1px solid rgba(111, 112, 112, 0.3);
+        position: relative;
     }
     .News_L{
         border-right:1px solid rgba(111, 112, 112, 0.3);
@@ -372,10 +374,6 @@
         right:130px;
         top:50px;
     }
-
-    .News{
-        position: relative;
-    }
     .News .arrow{
         display: flex;
     }
@@ -418,7 +416,7 @@
         display: flex;
         position: relative;
     }
-    .slide .slide_L{
+    .slide>.slide_L{
         width: 70%;
         background: #005841;
         color:#fff;
@@ -430,11 +428,6 @@
     }
     .slide_L>ul>li.on{
         display: block;
-    }
-    .slide .slide_L>ul>li p {
-        font-size: 2rem;
-        font-weight: bold;
-        padding-top: 155px;
     }
     .slide_L>ul>li h2{
         font-size: 4rem;
@@ -449,15 +442,15 @@
     .slideL_list>li{
         width: 334px;
     }
+    .slide .slide_L>ul>li p {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-top: 155px;
+    }
     .slideL_list>li img{
         background: #fff;
         border-radius: 50%;
         width: 200px;
-    }
-    .slide_R{
-        width:30%;
-        color: #005841;
-        transition: all 0.7s ease 0s;
     }
     .slide_L .train{
         width:600%;
@@ -468,6 +461,11 @@
     .slide_L .train>li {
         width: calc(100%/6);
         height:100%;
+    }
+    .slide_R{
+        width:30%;
+        color: #005841;
+        transition: all 0.7s ease 0s;
     }
     .slide_R{overflow: hidden;}
     .slide_R>.train{
@@ -632,13 +630,13 @@
         height: 100%;
         margin-top: 50px
     }
-    .snsList .snsSlide{
+    .snsSlide{
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .snsList .snsSlide img{
+    .snsSlide img{
         display: block;
         width: 100%;
         object-fit:contain;
@@ -700,36 +698,46 @@
     .subcon>ul{
         display: flex;
     }
-    .subcontent .items>h2{
+    .subcon>.items>h2{
         color: #005841;
         font-size: 3.5rem;
         font-weight: bold;
         text-align: center;
     }
-    .subcontent .items {
+    .sim{
+        width: 360px;
+    }
+    .subcon .items>ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .subcon> .items{
+        width: 100%;
+
+    }
+    .subcontent>.items {
         display: none;
         position: absolute;
         left: 0;
         top: 400px;
     }
-    .subcontent .items.complec {
+    .subcontent>.items.complec {
         display: none;
         position: absolute;
         left: 0;
         top: 400px;
         width: 100%;
     }
-    .subcontent .items.on{
+    .subcontent>.items.on{
         display:inline-block;
     }
-    .subcontent .items>ul {
+    .subcontent>.items>ul {
         display: flex;
         justify-content: flex-start;
         margin: 70px 0;
         flex-wrap: wrap;
     }
-    .subcontent .complec>ul {
-
+    .subcontent > .complec>ul {
         flex-direction: column;
     }
     .subcontent .complec>ul>li h2{
@@ -739,7 +747,7 @@
         width: 1440px;
         color: #005841;
     }
-    .subcontent .complec>ul>li h3{
+    .item3dep h3{
         margin-top:20px;
         font-size: 1.8rem;
         font-weight: bold;
@@ -749,7 +757,7 @@
     }
     .subcontent .items>ul>li {
         padding-bottom: 150px;
-        width: 360px;
+        /* width: 360px; */
     }
     .subcontent .items>ul>li p {
         text-align: center;
@@ -769,21 +777,21 @@
     .item3dep {
         display: flex;
         flex-wrap: wrap;
+        width: 1440px;
         /* flex: 25%; */
     }
     .item3dep>li {
         margin-bottom: 50px;
         display: flex;
         flex-wrap: wrap;
-        width: 300px;
-        margin-right: 60px;
+        flex: 25%;
     }
     .item4dep{
         display:flex;
         flex-wrap: wrap;
     }
     .item4dep>li{
-        flex: 25%;
+        width: 360px;
     }
     .sub1 .pageNation{
         display: flex;

@@ -36,8 +36,8 @@ window.onload = function(){
 
     });
 
-    // sns 슬라이드
-    let station4 = new Swiper(".sns .station4",{
+    // sns슬라이드
+    let station4 = new Swiper(".station4",{
       loop:true,
       spaceBetween:10,
         autoplay:true,
@@ -59,7 +59,7 @@ window.onload = function(){
         },
      });
 
-    //  서브페이지1-1 슬라이드 top
+    //  서브페이지1-1 위 슬ㄹㅏ이드
      let station5 = new Swiper(".station5",{
       loop:true,
       direction:"horizontal",
@@ -69,7 +69,7 @@ window.onload = function(){
        },
      });
 
-     //  서브페이지1-1 슬라이드 bottom
+     //  서브페이지1-1 아래 슬라이드
      let station6 = new Swiper(".station6",{
       loop:true,
       direction:"horizontal",
@@ -88,22 +88,30 @@ window.onload = function(){
      });
 
     // 모바일 메뉴
-     let menu = false;
-     $(".btnMoMenu").click(function(){
-         if(menu == false){
-             $(".btnMoMenu").addClass("close")
-             $(".moMenu").addClass("show")
-             menu = true
-         }else{
-             $(".btnMoMenu").removeClass("close")
-             $(".moMenu").removeClass("show")
-             menu = false
-         }
-         }) 
+    let menu = false;
+    $(".btnMoMenu").click(function(){
+        if($(".moMenu").hasClass("on")==false){
+            $(".moMenu").addClass("on")
+        }else{
+            $(".moMenu").removeClass("on")
+        }
+    })
+      $(".mobileMenuList>li").click(function(){
+          if($(this).hasClass("on")==true){
+              $(this).css("height","50px")
+              $(this).removeClass("on")
+          }else{
+              $(".mobileMenuList>li").css("height","50px")
+              $(".mobileMenuList>li").removeClass("on")
+              let li2depth = $(this).children("ul").children().length
+              $(this).css("height",(li2depth+1)*50+"px")
+              $(this).addClass("on")
+          }
+      $(".momenu ul").click(function(){
+          return false
+      })
+      
+      });
 
-
-         document.cookie = "safeCookie1=foo; SameSite=Lax"; 
-         document.cookie = "safeCookie2=foo"; 
-         document.cookie = "crossCookie=bar; SameSite=None; Secure";
 }
  
