@@ -1,13 +1,13 @@
 $(document).ready(function(){
     // 메인페이지 페이지 스크롤
     $(window).scroll(function(){
-        let winst = $(window).scrollTop()
-        let s2top = $(".station2").offset().top
-        if(winst>=s2top){
-            $(".station2").addClass("on")
-        }else{
-            $(".station2").removeClass("on")
-        }
+        // let winst = $(window).scrollTop()
+        // let s2top = $(".station2").offset().top
+        // if(winst>=s2top){
+        //     $(".station2").addClass("on")
+        // }else{
+        //     $(".station2").removeClass("on")
+        // }
     })
     $("main>div").click(function(){})
 

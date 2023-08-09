@@ -96,22 +96,44 @@ window.onload = function(){
             $(".moMenu").removeClass("on")
         }
     })
-      $(".mobileMenuList>li").click(function(){
-          if($(this).hasClass("on")==true){
-              $(this).css("height","50px")
-              $(this).removeClass("on")
+      $(".mobileMenuList>li .depi").click(function(){
+          
+          if($(this).parent().parent().hasClass("on")==true){
+              $(this).parent().parent().css("height","50px")
+              $(this).parent().parent().removeClass("on")
           }else{
               $(".mobileMenuList>li").css("height","50px")
               $(".mobileMenuList>li").removeClass("on")
-              let li2depth = $(this).children("ul").children().length
-              $(this).css("height",(li2depth+1)*50+"px")
-              $(this).addClass("on")
+              let li2depth = $(this).parent().parent().children("ul").children().length
+              $(this).parent().parent().css("height",(li2depth+1)*50+"px")
+              $(this).parent().parent().addClass("on")
           }
-      $(".momenu ul").click(function(){
-          return false
-      })
+          return false;
       
       });
 
+      // $(".mobileMenuList>li>a").click(function(e){
+      //   // e.preventDefault()
+      // })
+
+      // $(".mobileMenuList >li>ul").click(function(){
+      //   // return false
+      // })
+
 }
+
+$(document).ready(function(){
+  let idx = location.href.split("?")[1].split("=")[1]
+  console.log(idx)
+
+  
+  $(".subtaplist>li").removeClass("on")
+  $(".subtaplist>li").eq(idx).addClass("on")
+
+  $(".subcon>li").removeClass("on")
+  $(".subcon>li").eq(idx).addClass("on")
+
+  let liHeight = $(".subcon>li.on").height()
+  $(".subcon").height(liHeight)
+})
  
