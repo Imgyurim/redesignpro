@@ -52,11 +52,12 @@ $(document).ready(function(){
 
     $(".maintab>li").click(function(){
         let idx = $(this).index()
+        $(".bg_category").css("transform","translateX("+(-16.6667*idx)+"%)")
+
         $(".maintab>li").removeClass("on")
         $(this).addClass("on")
 
-        $(".bg_category>.bg_items").removeClass("on")
-        $(".bg_category>.bg_items").eq(idx).addClass("on")
+        
 
         $(".maincontent>.items").removeClass("on")
         $(".maincontent>.items").eq(idx).addClass("on")
@@ -142,6 +143,11 @@ $(document).ready(function(){
 
         $(".content_items > .items_list").removeClass("on")
         $(".content_items > .items_list").eq(idx).addClass("on")
+
+        $(".multi_station > div").removeClass("on")
+        $(".multi_station > div").eq(idx).addClass("on")
+
+
 
         // $(".aa>li").removeClass("on")
         // $(".aa>li").eq(idx).addClass("on")

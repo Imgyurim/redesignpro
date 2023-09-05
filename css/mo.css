@@ -202,15 +202,18 @@
         .bg_category{
             width: 600%;
             display: flex;
+            transition:all 0.7s ease 0s;
+            transform:translateX(0%)
         }
         .bg_category>li{
             height: 432px;
+            flex:1;
         }
         .bg_area>ul>li img{
             width: 100%;
             height: 100%;
             object-fit: cover;
-            display: none;
+            /* display: none; */
         }
         .bg_area>ul>li.on img{
             display: block;

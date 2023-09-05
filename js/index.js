@@ -69,6 +69,15 @@ window.onload = function(){
        },
      });
 
+     let station66 = new Swiper(".station66",{
+      loop:true,
+      direction:"horizontal",
+        navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+     });
+
      //  서브페이지1-1 아래 슬라이드
      let station6 = new Swiper(".station6",{
       loop:true,
@@ -119,18 +128,5 @@ window.onload = function(){
 
 }
 
-$(document).ready(function(){
-  let idx = location.href.split("?")[1].split("=")[1]
-  console.log(idx)
 
-  
-  $(".subtaplist>li").removeClass("on")
-  $(".subtaplist>li").eq(idx).addClass("on")
-
-  $(".subcon>li").removeClass("on")
-  $(".subcon>li").eq(idx).addClass("on")
-
-  let liHeight = $(".subcon>li.on").height()
-  $(".subcon").height(liHeight)
-})
  
