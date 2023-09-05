@@ -55,11 +55,11 @@ $(document).ready(function(){
         $(".maintab>li").removeClass("on")
         $(this).addClass("on")
 
-        $(".bg_category > .bg_items").removeClass("on")
-        $(".bg_category > .bg_items").eq(idx).addClass("on")
+        $(".bg_category>.bg_items").removeClass("on")
+        $(".bg_category>.bg_items").eq(idx).addClass("on")
 
-        $(".maincontent > div").removeClass("on")
-        $(".maincontent > div").eq(idx).addClass("on")
+        $(".maincontent>.items").removeClass("on")
+        $(".maincontent>.items").eq(idx).addClass("on")
 
     });
 
@@ -140,8 +140,11 @@ $(document).ready(function(){
         $(".bot_list .bot_items").removeClass("on")
         $(".bot_list .bot_items").eq(idx).addClass("on")
 
-        $(".list > .list_top").removeClass("on")
-        $(".list > .list_top").eq(idx).addClass("on")
+        $(".content_items > .items_list").removeClass("on")
+        $(".content_items > .items_list").eq(idx).addClass("on")
+
+        // $(".aa>li").removeClass("on")
+        // $(".aa>li").eq(idx).addClass("on")
     });
        
     // 서브페이지3 탭메뉴
@@ -162,6 +165,16 @@ $(document).ready(function(){
 
         $(".cost_text > li").removeClass("on")
         $(".cost_text > li").eq(idx).addClass("on")
+
+
     });
+
+
+    
+
+
+
+
+
 
 })

@@ -93,7 +93,7 @@
         object-fit: cover;
         filter: brightness(0.8);
     }
-    .s1slideTxt{
+    .bannerslideTxt{
         position: absolute; 
         width: 50%;
         left: 10%;
@@ -101,15 +101,15 @@
         color: #fff;
         padding: 10px;
     }
-    .s1slideTxt p{    
+    .bannerslideTxt p{    
         font-size: 3.6rem;
         font-weight: bold;
     }
-    .s1slideTxt h2{
+    .bannerslideTxt h2{
         font-size: 5rem;
         font-weight: bold;
     }
-    .s1slideTxt{
+    .bannerslideTxt{
         opacity: 1;
         transform: translateY(0px);
     }
@@ -747,7 +747,7 @@
         width: 1440px;
         color: #005841;
     }
-    .item3dep h3{
+    .complec  h3{
         margin-top:20px;
         font-size: 1.8rem;
         font-weight: bold;

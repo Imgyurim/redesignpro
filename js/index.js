@@ -95,6 +95,11 @@ window.onload = function(){
         }else{
             $(".moMenu").removeClass("on")
         }
+        if($(this).hasClass("on")==false){
+          $(this).addClass("on")
+        }else{
+          $(this).removeClass("on")
+        }
     })
       $(".mobileMenuList>li .depi").click(function(){
           
@@ -111,14 +116,6 @@ window.onload = function(){
           return false;
       
       });
-
-      // $(".mobileMenuList>li>a").click(function(e){
-      //   // e.preventDefault()
-      // })
-
-      // $(".mobileMenuList >li>ul").click(function(){
-      //   // return false
-      // })
 
 }
 

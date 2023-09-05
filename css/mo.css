@@ -28,6 +28,11 @@
             flex-direction: column;
             justify-content: center;
             cursor: pointer;
+            position:relative; 
+
+        }
+        .btnMoMenu.on{
+
         }
         .btnMoMenu>span{
             width:100%;
@@ -35,6 +40,16 @@
             background:#fff;
             display:block;
             margin:3px 0;
+            transition: all ease 0.5s 0s;
+        }
+        .btnMoMenu.on>span:nth-of-type(1){
+            transform: rotate(45deg)translate(15px,-2px);
+        }
+        .btnMoMenu.on>span:nth-of-type(2){
+            opacity: 0;
+        }
+        .btnMoMenu.on>span:nth-of-type(3){
+            transform: rotate(-45deg)translate(13px,4px);
         }
         .moLogo{
             width: 180px;
@@ -189,8 +204,7 @@
             display: flex;
         }
         .bg_category>li{
-            width: 100%;
-            height: 350px;
+            height: 432px;
         }
         .bg_area>ul>li img{
             width: 100%;
@@ -698,11 +712,11 @@
             text-align: center;
             color: #fff;
             background: #005841;
-            width: 90%;
+            width: 98%;
             height: 38px;
             line-height: 40px;
             margin: 0 auto;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             border-radius: 15px;
         }
         .sub1 .pageNation{
@@ -984,7 +998,7 @@
         .sub3tabmenu ul>li{
             margin-right:20px;
         }
-        .tab33{
+        .tab3{
             display: flex;
             justify-content: center;
             padding-bottom: 160px;
