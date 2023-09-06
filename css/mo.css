@@ -336,11 +336,7 @@
             }
             }
         .News_L>.textwrap img{
-            animation: rotate 15s linear 0s infinite;
-            position: absolute;
-            right: -42%;
-            top: -115px;
-            opacity: 0.1;
+            display: none;
         }
         .News_R{
             width: 100%;
@@ -575,6 +571,7 @@
             font-size: 2rem;
             font-weight: bold;
             padding: 20px 15px;
+            line-height: 1;
         }
         .snsTitle>p{
             margin-bottom: 25px;
@@ -632,7 +629,7 @@
         }
         .subcon>li>h2{
             color: #005841;
-            font-size: 3.5rem;
+            font-size: 30px;
             font-weight: bold;
             text-align: center;
         }
@@ -701,7 +698,7 @@
             padding: 30px 0;
         }
         .complec>ul>li h3{
-            font-size: 1.5rem;
+            font-size: 20px;
             font-weight: bold;
             text-align: center;
             width: 100%;

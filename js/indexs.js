@@ -147,10 +147,6 @@ $(document).ready(function(){
         $(".multi_station > div").removeClass("on")
         $(".multi_station > div").eq(idx).addClass("on")
 
-
-
-        // $(".aa>li").removeClass("on")
-        // $(".aa>li").eq(idx).addClass("on")
     });
        
     // 서브페이지3 탭메뉴

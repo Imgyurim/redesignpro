@@ -78,6 +78,41 @@ window.onload = function(){
        },
      });
 
+     let station7 = new Swiper(".station7",{
+      loop:true,
+      direction:"horizontal",
+        navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+     });
+     
+     let station8 = new Swiper(".station8",{
+      loop:true,
+      direction:"horizontal",
+        navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+     });
+
+     
+     let station9 = new Swiper(".station9",{
+      loop:true,
+      direction:"horizontal",
+        navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+     });
+     let station10 = new Swiper(".station10",{
+      loop:true,
+      direction:"horizontal",
+        navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+     });
      //  서브페이지1-1 아래 슬라이드
      let station6 = new Swiper(".station6",{
       loop:true,
